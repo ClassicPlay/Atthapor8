@@ -1,31 +1,5 @@
 <!DOCTYPE html>
 <html lang="th">
-<head>
-
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Country Map Example</title>
-    <script src="mapdata.js"></script>
-    <script src="countrymap.js"></script>
-  </head>
-  <body>
-  <h1>HTML5/Javascript Country Map</h1>
-    <div id="map"></div>
-    
-    
-      <p>This map was created and can be edited at <a href="http://simplemaps.com/custom/country/9J1pN3L5">http://simplemaps.com/custom/country/9J1pN3L5</a>
-    
-    
-      <p>To remove the "Simplemaps.com Trial" text, <a href="http://simplemaps.com/pricing" />purchase a map license</a>.  
-      
-      Then, register your license at the link above (Options > Register Purchase).  Or, simply replace the countrymap.js file in this folder (trial version) with the countrymap.js file that you are emailed (full version).
-      
-      </p>
-    
-    <p>To learn how to install this map on your web page, see the <a href="http://simplemaps.com/docs">Documentation</a>.</p>
-	</body>
-
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>บ้านนอกแกลม - ปลาร้าไทยออริจินัล</title>
@@ -138,8 +112,37 @@
 
     <!-- Regional Information -->
     <section class="regional-info">
-        <img src="https://placehold.co/3048x1715" alt="แผนที่ประเทศไทย" class="map-image">
-        
+        <img src="https://i.postimg.cc/50gRYrGZ/phaenth-thiy.png" alt="แผนที่ประเทศไทย" class="map-image">
+        <div class="region-overlay north" data-region="north"></div>
+        <div class="region-overlay northeast" data-region="northeast"></div>
+        <div class="region-overlay central" data-region="central"></div>
+        <div class="region-overlay south" data-region="south"></div>
+
+        <div class="popup" id="popup-north">
+            <h4>ภาคเหนือ</h4>
+            <p>ปลาแห้ง</p>
+            <p>ภาคเหนือ มีประชากร 10 ล้านคน</p>
+            <p>ข้าวโพด พริกแห้ง</p>
+            </div>
+        <div class="popup" id="popup-northeast">
+            <h4>ภาคอีสาน</h4>
+            <p>ปลาร้า</p>
+            <p>ภาคอีสาน มีประชากร 21 ล้านคน</p>
+            <p>ข้าวเหนียว น้ำตก</p>
+        </div>
+        <div class="popup" id="popup-central">
+            <h4>ภาคกลาง</h4>
+            <p>ปลาดุก</p>
+            <p>ภาคกลาง มีประชากร 12 ล้านคน</p>
+            <p>ข้าวเจ้า ก๋วยเตี๋ยว</p>
+        </div>
+        <div class="popup" id="popup-south">
+            <h4>ภาคใต้</h4>
+            <p>ปลาทู</p>
+            <p>ภาคใต้ มีประชากร 8.5 ล้านคน</p>
+            <p>อาหารทะเล แกงส้ม</p>
+        </div>
+    </div>
         <div class="info-box nongkhai">
             <h3>จังหวัดนครพนม</h3>
             <p>10.1 ล้านบาท/ปี<br>มีโรงงานปลาร้า</p>
@@ -251,7 +254,7 @@
         
         <p class="menu-intro">
             คุณรู้จัก        <br><br>
-            อาหารที่มี                            เป็นส่วนผสมไหม
+            อาหารที่มีเป็นส่วนผสมไหม
         </p>
         
         <p class="menu-note">
